@@ -1,0 +1,11 @@
+os: windows
+files:
+  - source: source
+    destination: C:\apache-tomcat-7.0.67\webapps\myApp
+hooks:
+  BeforeInstall:
+    - location: Scripts/UnzipResourceBundle.sh
+    - location: Scripts/UnzipDataBundle.sh
+  AfterInstall:
+  ApplicationStart:
+  ValidateService:
