@@ -11,6 +11,7 @@
                 <target name="init">
                                 <mkdir dir="build/classes"/>
                                 <mkdir dir="dist" />
+                                <copy file="appspec.yml" tofile="../appspec.yml"/>
                 </target>
 
                 <target name="compile" depends="init" >
