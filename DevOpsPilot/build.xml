@@ -19,7 +19,7 @@
                                 </javac>
                 </target>
                 
-                <target name="junit" depends="compile">
+                <!-- target name="junit" depends="compile">
                                 <junit printsummary="yes" haltonfailure="no">
                                                 <classpath location="${test.classes.dir}" />
                                                 <formatter type="xml" />
@@ -30,10 +30,10 @@
                                                                 </fileset>
                                                 </batchtest>
                                 </junit>
-                </target>
+                </target-->
                 
-                <target name="war" depends="junit">
-                                <war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
+                <target name="war" depends="compile">
+                                <war destfile="dist/DevopsPilot.war" webxml="WebContent/WEB-INF/web.xml">
                                                 <fileset dir="WebContent"/>
                                                 <lib dir="WebContent/WEB-INF/lib"/>
                                                 <classes dir="build/classes"/>
