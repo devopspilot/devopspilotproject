@@ -1,1 +1,3 @@
-C:\apache-tomcat-7.0.67\bin\startup.bat
+@echo off
+pushd  "C:\apache-tomcat-7.0.67\bin"
+call startup.bat

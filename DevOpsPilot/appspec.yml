@@ -3,9 +3,8 @@ os: windows
 files:
   - source: \devopspilot\dist
     destination: C:\apache-tomcat-7.0.67\webapps\
-  - source: appstart.bat
-    destination: C:\apache-tomcat-7.0.67\webapps\codedeploybat
+
 hooks:
    ApplicationStart:
-    - location: C:\apache-tomcat-7.0.67\webapps\codedeploybat\appstart.bat
+    - location: appstart.bat
       timeout: 300
