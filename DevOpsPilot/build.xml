@@ -11,7 +11,7 @@
                 <target name="init">
                                 <mkdir dir="build/classes"/>
                                 <mkdir dir="dist" />
-                                <move file="appspec.yml" tofile="../appspec.yml"/>
+                                <!--move file="appspec.yml" tofile="../appspec.yml"/-->
                 </target>
 
                 <target name="compile" depends="init" >
@@ -35,8 +35,9 @@
                 
                 <target name="war" depends="compile">
                                 <war destfile="dist/DevopsPilot.war" webxml="WebContent/WEB-INF/web.xml">
-                                                <fileset dir="WebContent"/>
-                                                <lib dir="WebContent/WEB-INF/lib"/>
+                                                <fileset dir="WebContent/">
+                                                	<exclude name="WEB-INF/lib/servlet-api.jar"/>
+                                                </fileset>
                                                 <classes dir="build/classes"/>
                                 </war>
                 </target>
