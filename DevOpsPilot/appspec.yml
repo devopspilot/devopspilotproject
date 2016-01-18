@@ -1,5 +1,5 @@
 version: 0.0
 os: windows
 files:
-  - source: \
+  - source: \devopspilot
     destination: C:\apache-tomcat-7.0.67\webapps\devopspilot
