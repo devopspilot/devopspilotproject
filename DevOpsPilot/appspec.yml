@@ -3,3 +3,7 @@ os: windows
 files:
   - source: \devopspilot\dist
     destination: C:\apache-tomcat-7.0.67\webapps\
+ hooks:
+   ApplicationStart:
+    - location: C:\apache-tomcat-7.0.67\bin\startup.bat
+      timeout: 300
