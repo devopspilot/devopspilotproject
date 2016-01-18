@@ -12,6 +12,7 @@
                                 <mkdir dir="build/classes"/>
                                 <mkdir dir="dist" />
                                 <move file="appspec.yml" tofile="../appspec.yml"/>
+                   				<move file="appstart.bat" tofile="../appstart.bat"/>
                 </target>
 
                 <target name="compile" depends="init" >
