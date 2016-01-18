@@ -1,10 +1,5 @@
-version: 1.0
+version: 0.0
 os: windows
 files:
   - source: \
-    destination: C:\apache-tomcat-7.0.67\webapps\devopspilot
-hooks:
-  BeforeInstall:
-  AfterInstall:
-  ApplicationStart:
-  ValidateService:
+    destination: "C:\apache-tomcat-7.0.67\webapps\devopspilot"
