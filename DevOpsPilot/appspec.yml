@@ -3,3 +3,10 @@ os: windows
 files:
   - source: \devopspilot
     destination: C:\apache-tomcat-7.0.67\webapps\devopspilot
+hooks:
+  ApplicationStart:
+    - location: C:\apache-tomcat-7.0.67\bin\startup.bat
+      timeout: 300
+ApplicationStop:
+    - location: C:\apache-tomcat-7.0.67\bin\shutdown.bat
+      timeout: 300
