@@ -5,5 +5,5 @@ files:
     destination: C:\apache-tomcat-7.0.67\webapps\
 hooks:
    ApplicationStart:
-    - location: C:\apache-tomcat-7.0.67\bin\startup.bat
+    - location: appstart.bat
       timeout: 300
