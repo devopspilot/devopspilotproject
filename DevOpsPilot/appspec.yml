@@ -5,6 +5,9 @@ files:
     destination: C:\apache-tomcat-7.0.67\webapps\
 
 hooks:
+   ApplicationStop:
+    - location: appstop.bat
+      timeout: 300
    ApplicationStart:
     - location: appstart.bat
       timeout: 300
