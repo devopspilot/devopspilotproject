@@ -1,13 +1,14 @@
 @echo off
 pushd  "C:\apache-tomcat-7.0.67\webapps"
-$strFolderName="DevopsPilot"
-If (Test-Path $strFolderName){
-	Remove-Item $strFolderName
-}
 
-$strFileName=DevopsPilot.war
-If (Test-Path $strFileName){
-	Remove-Item $strFileName
-}
+@REM Folder to be deleted
+SET FolderToDelete="DevopsPilot"
+if exist %FolderToDelete% rd /q /s %FolderToDelete%
+
+@REM File to be deleted
+SET FileToDelete="DevopsPilot.war"
+ 
+@Try to delete the file only if it exists
+IF EXIST %FileToDelete% del /F %FileToDelete%
 
 TIMEOUT 5
