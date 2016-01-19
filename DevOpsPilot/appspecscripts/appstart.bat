@@ -5,4 +5,4 @@ SLEEP 4
 call startup.bat
 SLEEP 30
 start http://localhost:8080/DevopsPilot/welcome.jsp
-TIMEOUT 10
+exit

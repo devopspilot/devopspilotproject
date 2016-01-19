@@ -5,4 +5,4 @@ if exist "DevopsPilot" rd /q /s "DevopsPilot"
 
 if exist "DevopsPilot.war" del /F "DevopsPilot.war"
 
-TIMEOUT 5
+exit
