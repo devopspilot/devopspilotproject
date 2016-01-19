@@ -7,4 +7,4 @@ files:
 hooks:
    ApplicationStart:
     - location: appstart.bat
-      timeout: 360
+      timeout: 30
