@@ -3,11 +3,3 @@ os: windows
 files:
   - source: \devopspilot\dist
     destination: C:\apache-tomcat-7.0.67\webapps\
-
-hooks:
-   BeforeInstall:
-    - location: beforeinstall.bat
-      timeout: 300
-   ApplicationStart:
-    - location: appstart.bat
-      timeout: 300
