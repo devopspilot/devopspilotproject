@@ -5,6 +5,9 @@ files:
     destination: C:\apache-tomcat-7.0.67\webapps\
     
 hooks:
+   ApplicationStop:
+    - location: DevOpsPilot/appspecscripts/appstop.bat
+      timeout: 300
    BeforeInstall:
     - location: DevOpsPilot/appspecscripts/beforeinstall.bat
       timeout: 300
