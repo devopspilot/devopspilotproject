@@ -6,8 +6,8 @@ files:
     
 hooks:
    BeforeInstall:
-    - location: appspecscripts/beforeinstall.bat
+    - location: DevOpsPilot/appspecscripts/beforeinstall.bat
       timeout: 300
    ApplicationStart:
-    - location: appspecscripts/appstart.bat
+    - location: DevOpsPilot/appspecscripts/appstart.bat
       timeout: 300
