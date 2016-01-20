@@ -1,4 +1,5 @@
 pushd "C:\apache-tomcat-7.0.67\bin"
-call startup.bat
+service install DevopsPilot
+tomcat7 //RS//DevopsPilot
 exit
 exit
