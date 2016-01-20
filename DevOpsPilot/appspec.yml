@@ -5,5 +5,5 @@ files:
     destination: C:\apache-tomcat-7.0.67\webapps\
 hooks:
     BeforeInstall:
-    - location: beforeinstall.bat
+    - location: appspecscripts/beforeinstall.bat
       timeout: 60
