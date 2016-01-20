@@ -4,6 +4,6 @@ files:
   - source: \devopspilot\dist
     destination: C:\apache-tomcat-7.0.67\webapps\
 hooks:
-	BeforeInstall:
-	- location: beforeinstall.bat
-	timeout: 60
+    BeforeInstall:
+    - location: beforeinstall.bat
+      timeout: 60
