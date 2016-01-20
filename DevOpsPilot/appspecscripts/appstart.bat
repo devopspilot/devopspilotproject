@@ -1,2 +1,2 @@
-call tomcatstart.bat
+call ./tomcatstart.bat
 exit
