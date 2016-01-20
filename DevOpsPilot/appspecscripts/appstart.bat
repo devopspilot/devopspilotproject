@@ -1,2 +1,2 @@
-start cmd /k "tomcatstart.bat"
+call tomcatstart.bat
 exit
