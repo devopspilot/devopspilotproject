@@ -3,14 +3,4 @@ os: windows
 files:
   - source: \devopspilot\dist
     destination: C:\apache-tomcat-7.0.67\webapps\
-    
-hooks:
-   ApplicationStop:
-    - location: DevOpsPilot/appspecscripts/appstop.bat
-      timeout: 30
-   BeforeInstall:
-    - location: DevOpsPilot/appspecscripts/beforeinstall.bat
-      timeout: 30
-   ApplicationStart:
-    - location: DevOpsPilot/appspecscripts/appstart.bat
-      timeout: 30
+   
