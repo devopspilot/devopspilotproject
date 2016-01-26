@@ -7,6 +7,6 @@
 <title>Sample DevOps Project</title>
 </head>
 <body>
-Welcome to DevOps 2.7
+Welcome to DevOps 2.8
 </body>
 </html>
