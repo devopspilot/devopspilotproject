@@ -7,6 +7,6 @@ hooks:
     BeforeInstall:
     - location: DevOpsPilot/appspecscripts/beforeinstall.bat
       timeout: 60
-    ApplicationStart:
+    AfterInstall:
     - location: DevOpsPilot/appspecscripts/appstart.bat
       timeout: 60
