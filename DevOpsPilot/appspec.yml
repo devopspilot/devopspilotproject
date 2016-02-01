@@ -9,4 +9,4 @@ hooks:
       timeout: 60
     ApplicationStart:
     - location: appstart.bat
-      timeout: 60
+      timeout: 100
