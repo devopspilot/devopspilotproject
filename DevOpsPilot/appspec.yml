@@ -8,5 +8,5 @@ hooks:
     - location: DevOpsPilot/appspecscripts/beforeinstall.bat
       timeout: 60
     ApplicationStart:
-    - location: appstart.bat
+    - location: DevOpsPilot/appspecscripts/appstart.bat
       timeout: 60
