@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: \devopspilot\dist
-    destination: C:\apache-tomcat-7.0.67\webapps\
+    destination: C:\apache-tomcat-7.0.68\webapps\
 hooks:
     BeforeInstall:
     - location: DevOpsPilot/appspecscripts/beforeinstall.bat
